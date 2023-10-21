@@ -1,0 +1,227 @@
+body{
+    background-color: #DEDEDE;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+}
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.rectangle {
+    width: 119vw;
+    height: 76vh;
+    top: 15.375vh;
+    left: -66vh;
+    background-color: #756966;
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(-40deg);
+}
+.line {
+    width: 119vw;
+    height: 80vh;
+    top: 15.375vh;
+    left: -66vh;
+    background-color: #DEDEDE;
+    position: absolute;
+    transform-origin: top left;
+    transform: rotate(-40deg);
+    border: #756966 solid 4px;
+}
+
+.navbar {
+    color: #131313;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 20px;
+    margin-right: 10vw;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #131313;
+    color: #131313;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.08px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav-icon img {
+    width: 20px;
+    height: 20px;
+}
+.menu{
+    position: relative;
+    Width:350px;
+    Height:470px;
+    top: -30px;
+}
+.hero-main{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-description{
+    position: relative;
+    top: 20vh;
+}
+.hero-description .order{
+    position: absolute;
+    right: 0;
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #756966;
+    border-radius: 8px;
+    padding: 12px 24px 12px 24px;
+    gap: 12px;
+    color: #F1F1F1;
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.12px;
+
+}
+.food-description{
+    position: relative;
+    background-color: #D2D1D1;
+    /* border-radius: 12px;
+    width: 330px;
+    height: 394px; */
+    border-radius: 12px;
+    right: 0;
+    top: 12vh;
+    padding: 3vh;
+}
+.hero-header{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8vw;
+}
+.hero-header p{
+    display: flex;
+    align-items: center;
+}
+.hero-header p img{
+    margin-right: 1vw;
+}
+.h{
+    height: 25vh;
+    color: #3D3D3D;
+    font-family: Plus Jakarta Sans;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.45px;
+}
+.h2{
+    color: #131313;
+    font-family: Plus Jakarta Sans;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+.food-header{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.08px;
+}
+.note, .highlight{
+    color: #131313;
+    font-family: Plus Jakarta Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 5vh;
+}
+.highlight{
+    border-radius: 10px;
+    background: #9B6354;
+}
+.chef{
+    color: #131313;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.08px;
+}
+.p-desc{
+    color: #131313;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07px;
+}
+.reaction{
+    display: flex;
+}
+.react{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #DEDEDE;
+    padding: 1.5vh;
+}
+.react:last-child{
+    margin-left: 2vw;
+}
+.react img{
+    margin-right: 1vw;
+}
+.food-selection{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5vw;
+}
+.list-food{
+    display: flex;
+    margin-left: 2vw;
+}
+.food{
+    margin-right: 2vw;
+    padding: 2vi;
+}
+
+.food img{
+    width: 67px;
+    height: 93px;
+}
+.food-active{
+    background-color: #D2D1D1;
+    border-radius: 8px;
+}
