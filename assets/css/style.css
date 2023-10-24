@@ -1,6 +1,21 @@
+:root {
+    --primary-color : #756966;
+    --secondary-color: #9B6354;
+    transition: --primary-color 1s ease, --secondary-color 1s ease;
+  }
 body{
     background-color: #DEDEDE;
-    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    padding-right: 2vw;
+}
+
+p{
+    color: #131313;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.07px;
 }
 .container {
     position: absolute;
@@ -13,7 +28,7 @@ body{
     height: 76vh;
     top: 15.375vh;
     left: -66vh;
-    background-color: #756966;
+    background-color: var(--primary-color);
     position: absolute;
     transform-origin: top left;
     transform: rotate(-40deg);
@@ -27,7 +42,7 @@ body{
     position: absolute;
     transform-origin: top left;
     transform: rotate(-40deg);
-    border: #756966 solid 4px;
+    border: var(--primary-color) solid 4px;
 }
 
 .navbar {
@@ -56,6 +71,24 @@ body{
     line-height: normal;
     letter-spacing: 0.08px;
 }
+.nav-item.active {
+    position: relative;
+}
+
+.nav-item.active::after {
+    content: ''; 
+    width: 6px; 
+    height: 6px; 
+    background-color: #25B52B;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -0.9vh;
+    left: 50%;
+    transform: translateX(-50%); 
+}
+.active{
+    color: #25B52B;
+}
 
 .nav-icons {
     display: flex;
@@ -69,10 +102,13 @@ body{
 }
 .menu{
     position: relative;
-    Width:350px;
-    Height:470px;
+    Width: 24vw;
+    Height: 60vh;
+    object-fit: contain;
     top: -30px;
+    transition: opacity 1s ease;
 }
+
 .hero-main{
     display: flex;
     justify-content: space-between;
@@ -89,7 +125,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 12px;
-    background-color: #756966;
+    background-color: var(--primary-color);
     border-radius: 8px;
     padding: 12px 24px 12px 24px;
     gap: 12px;
@@ -116,7 +152,8 @@ body{
 .hero-header{
     display: flex;
     flex-direction: column;
-    padding-left: 8vw;
+    /* padding-left: 8vw; */
+    min-width: 30vw;
 }
 .hero-header p{
     display: flex;
@@ -125,8 +162,7 @@ body{
 .hero-header p img{
     margin-right: 1vw;
 }
-.h{
-    height: 25vh;
+.hero-header h1{
     color: #3D3D3D;
     font-family: Plus Jakarta Sans;
     font-size: 90px;
@@ -134,6 +170,7 @@ body{
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.45px;
+    margin-bottom: 0;
 }
 .h2{
     color: #131313;
@@ -166,7 +203,7 @@ body{
 }
 .highlight{
     border-radius: 10px;
-    background: #9B6354;
+    background: var(--secondary-color);
 }
 .chef{
     color: #131313;
@@ -197,8 +234,19 @@ body{
     background: #DEDEDE;
     padding: 1.5vh;
 }
+.reacti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #DEDEDE;
+    padding: 1.5vh;
+    margin-left: 2vw;
+}
+
 .react:last-child{
     margin-left: 2vw;
+    border-radius: 50%;
 }
 .react img{
     margin-right: 1vw;
@@ -207,21 +255,56 @@ body{
     display: flex;
     flex-direction: row;
     margin-left: 5vw;
+    margin-top: -4vh;
 }
 .list-food{
     display: flex;
     margin-left: 2vw;
 }
 .food{
+    display: flex;
+    flex-direction: column;
     margin-right: 2vw;
-    padding: 2vi;
+    padding: 1vi;
+    align-items: center;
 }
 
 .food img{
     width: 67px;
-    height: 93px;
+    height: 90px;
+    object-fit: contain;
 }
 .food-active{
     background-color: #D2D1D1;
     border-radius: 8px;
 }
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10vw;
+}
+.icon img{
+    margin-right: 8vw;
+    
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeInOutAnimation {
+    animation: fadeInOut 1s ease;
+}
+.menu-opacity-transition {
+    transition: opacity 0.5s ease;
+}
+
