@@ -11,7 +11,7 @@ body{
 p{
     color: #131313;
     font-family: Plus Jakarta Sans;
-    font-size: 14px;
+    font-size: 1vi;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -56,7 +56,7 @@ p{
 
 .nav-items {
     display: flex;
-    gap: 20px;
+    gap: 2vw;
     margin-right: 10vw;
 }
 
@@ -65,7 +65,7 @@ p{
     color: #131313;
     color: #131313;
     font-family: Plus Jakarta Sans;
-    font-size: 14px;
+    font-size: 1vi;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -77,8 +77,8 @@ p{
 
 .nav-item.active::after {
     content: ''; 
-    width: 6px; 
-    height: 6px; 
+    width: 0.5vi; 
+    height: 0.5vi; 
     background-color: #25B52B;
     border-radius: 50%;
     position: absolute;
@@ -97,8 +97,8 @@ p{
 }
 
 .nav-icon img {
-    width: 20px;
-    height: 20px;
+    width: 3vw;
+    height: 3vh;
 }
 .menu{
     position: relative;
@@ -121,38 +121,38 @@ p{
     position: absolute;
     right: 0;
     display: inline-flex;
-    padding: 12px 24px;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 0.5vi;
     background-color: var(--primary-color);
-    border-radius: 8px;
-    padding: 12px 24px 12px 24px;
-    gap: 12px;
+    border-radius: 0.5vi;
+    padding: 0.4vi 2vi 0.4vi 2vi;
     color: #F1F1F1;
     font-family: Plus Jakarta Sans;
-    font-size: 12px;
+    font-size: 1.2vi;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: 0.12px;
+    letter-spacing: 0.0.4vi;
 
+}
+.order img{
+    width: 1.5vi;
+    height: 1.5vi;
 }
 .food-description{
     position: relative;
     background-color: #D2D1D1;
-    /* border-radius: 12px;
-    width: 330px;
-    height: 394px; */
-    border-radius: 12px;
+    border-radius: 0.5vi;
     right: 0;
     top: 12vh;
     padding: 3vh;
+    width: 24vw;
+    height: 50vh;
 }
 .hero-header{
     display: flex;
     flex-direction: column;
-    /* padding-left: 8vw; */
     min-width: 30vw;
 }
 .hero-header p{
@@ -161,11 +161,13 @@ p{
 }
 .hero-header p img{
     margin-right: 1vw;
+    width: 3vw;
+    height: 3vh;
 }
 .hero-header h1{
     color: #3D3D3D;
     font-family: Plus Jakarta Sans;
-    font-size: 90px;
+    font-size: 5.8vi;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -175,7 +177,7 @@ p{
 .h2{
     color: #131313;
     font-family: Plus Jakarta Sans;
-    font-size: 100px;
+    font-size: 6vi;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
@@ -186,7 +188,7 @@ p{
     justify-content: space-between;
     color: #000;
     font-family: Plus Jakarta Sans;
-    font-size: 14px;
+    font-size: 1vi;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -195,11 +197,12 @@ p{
 .note, .highlight{
     color: #131313;
     font-family: Plus Jakarta Sans;
-    font-size: 36px;
+    font-size: 3.4vi;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     height: 5vh;
+    margin-top: 4vh;
 }
 .highlight{
     border-radius: 10px;
@@ -208,7 +211,7 @@ p{
 .chef{
     color: #131313;
     font-family: Plus Jakarta Sans;
-    font-size: 16px;
+    font-size: 1.2vi;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -217,7 +220,7 @@ p{
 .p-desc{
     color: #131313;
     font-family: Plus Jakarta Sans;
-    font-size: 14px;
+    font-size: 1vi;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -225,6 +228,7 @@ p{
 }
 .reaction{
     display: flex;
+    gap: 1vi;
 }
 .react{
     display: flex;
@@ -233,6 +237,7 @@ p{
     border-radius: 6px;
     background: #DEDEDE;
     padding: 1.5vh;
+    gap: 1vi;
 }
 .reacti{
     display: flex;
@@ -240,43 +245,46 @@ p{
     align-items: center;
     border-radius: 50%;
     background: #DEDEDE;
-    padding: 1.5vh;
-    margin-left: 2vw;
 }
-
 .react:last-child{
     margin-left: 2vw;
     border-radius: 50%;
 }
-.react img{
-    margin-right: 1vw;
+.react img,.reacti img{
+    width: 3vw;
+    height: 3vh;
+}
+.slider{
+    width: 4vw;
+    height: 8vh;
 }
 .food-selection{
     display: flex;
     flex-direction: row;
     margin-left: 5vw;
     margin-top: -4vh;
+    align-items: center;
 }
 .list-food{
     display: flex;
     margin-left: 2vw;
+    gap: 1vw;
 }
 .food{
     display: flex;
     flex-direction: column;
-    margin-right: 2vw;
     padding: 1vi;
     align-items: center;
 }
 
 .food img{
-    width: 67px;
-    height: 90px;
+    width: 10vw;
+    height: 12vh;
     object-fit: contain;
 }
 .food-active{
     background-color: #D2D1D1;
-    border-radius: 8px;
+    border-radius: 0.5vi;
 }
 .icon{
     display: flex;
@@ -284,9 +292,16 @@ p{
     justify-content: flex-start;
     margin-left: 10vw;
 }
+.stars{
+    width: 8vw;
+    height: 8vh;
+}
 .icon img{
     margin-right: 8vw;
-    
+    margin-top: 5vh;
+    width: 3vw;
+    height: 3vh;
+    bottom: 1vh;
 }
 
 @keyframes fadeInOut {

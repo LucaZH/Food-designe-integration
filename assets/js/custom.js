@@ -16,6 +16,7 @@ foodItems.forEach(foodItem => {
         let secondaryColor = '#9B6354';
         let foodTitle = 'Miso';
         let secondTitle = 'RAMEN';
+        imageName.src = './assets/img/Miso Ramen.png'
 
         if (foodName === 'Sop Buntut') {
             primaryColor = '#C7B1B0';
