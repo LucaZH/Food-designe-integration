@@ -1,5 +1,6 @@
 const foodItems = document.querySelectorAll('.food');
 const menuImage = document.querySelector('.menu');
+const heroHeader = document.querySelector('.hero-header');
 
 foodItems.forEach(foodItem => {
     foodItem.addEventListener('click', function() {
@@ -34,7 +35,8 @@ foodItems.forEach(foodItem => {
             foodTitle = 'Ra';
             secondTitle = 'Risol';
         }
-
+        heroHeader.classList.add('fade-right');
+        menuImage.classList.add('fade-right');
         document.documentElement.style.setProperty('--primary-color', primaryColor);
         document.documentElement.style.setProperty('--secondary-color', secondaryColor);
         
@@ -44,7 +46,7 @@ foodItems.forEach(foodItem => {
         const activeFoodItem = document.querySelector('.food-active');
         activeFoodItem.classList.remove('food-active');
         this.classList.add('food-active', 'fadeInOutAnimation');
-
+        
         menuImage.classList.add('menu-opacity-transition');
 
         setTimeout(() => {
@@ -54,5 +56,10 @@ foodItems.forEach(foodItem => {
 
         document.querySelector('#food-title').innerHTML = foodTitle;
         document.querySelector('#second-name').innerHTML = secondTitle;
+        setTimeout(() =>{
+            heroHeader.classList.remove('fade-right');
+            menuImage.classList.remove('fade-right');
+        },1500)
+        
     });
 });
